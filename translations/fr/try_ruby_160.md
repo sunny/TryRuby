@@ -16,7 +16,7 @@ variables.
 
 Mettons les numéros de lotto dans l'ordre.
 
-Utilise:
+Utilise :
 
     ticket.sort!
 
