@@ -1,6 +1,6 @@
 ---
 lang:   FR
-title:  Malheuresement, la poésie de biscotte c'est pas ton truc
+title:  Malheureusement, la poésie de biscotte c'est pas ton truc
 answer: (toast){0}
 load:   prev
 ok:     Excellent
