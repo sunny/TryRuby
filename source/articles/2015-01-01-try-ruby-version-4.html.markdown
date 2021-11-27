@@ -12,8 +12,7 @@ the lucky stiff', a.k.a. \_Why. You can read more about him on
 <a href="http://en.wikipedia.org/wiki/Why_the_lucky_stiff" target="_blank">Wikipedia</a>.
 
 \_Why doesn't exist anymore, but TryRuby lives on. It was first recreated by Andrew McElroy
-and David Miani. Next Eric Allam and Nick Walsh took over (Envy Labs/Code School,
-available via <a href="http://tryruby.org/" target="_blank">TryRuby.org</a>).
+and David Miani. Next Eric Allam and Nick Walsh took over (Codeschool/EnvyLabs).
 
 ### Why_
 This fourth iteration of TryRuby was created for several reasons.
@@ -39,8 +38,8 @@ I had to make some alterations to the TryRuby lesson content. Also updated some 
 - Removed mousehole stuff
 - Improved the feedback given to the user based on the program's output a bit
 - Added support for lesson content in multiple languages. The Spanish, Brazilian Portuguese,
-  Japanese and Dutch translations are available.
-  __If YOU would like to add a translation to TryRuby you are most welcome !__
+  Japanese, Russian, Ukrainian, Macedonian and Dutch translations are available.
+  __If YOU would like to add a translation to TryRuby you are most welcome!__
 - Added explanation of if/else statements
 - Changed the subject of the "Class" tutorials from building a blog (so last decade) to making an
   instant messaging app called: Blurbalizer<sup>TM</sup>
@@ -49,7 +48,7 @@ I had to make some alterations to the TryRuby lesson content. Also updated some 
 - Added some articles with more background information for aspiring software developers
 
 ### Next
-Where can TryRuby<sup>R4</sup> be improved ? Couple of things I've thought of.
+Where can TryRuby<sup>R4</sup> be improved? Couple of things I've thought of.
 Your opinion is most welcome:
 
 - Add some self evaluation questions at the end of each chapter

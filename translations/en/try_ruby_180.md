@@ -4,8 +4,8 @@ title:  Summary #2 is Upon Us
 answer: \w+
 class:  stretcher chapmark
 load:   poem = "My toast has flown from my hand\nAnd my toast has gone to the moon.\nBut when I saw it on television,\nPlanting our flag on Halley's comet,\nMore still did I want to eat it.\n"
-ok:     Does it rhyme ?
-error:  
+ok:     Does it rhyme?
+error:
 ---
 
 Now, look how your second minute went:
@@ -15,7 +15,7 @@ If you try to reverse a number or do anything fishy, Ruby will tell you so.
 
 ### Arrays
 Arrays are lists for storing things in some order.
-We also know how to create array's and get items from array's.
+We also know how to create arrays and get items from arrays.
 
 ### Variables
 Variables save a thing and give it a name. You used the equals sign to do this. Like:

@@ -6,7 +6,7 @@ author: Ivo Herweijer
 
 ### The MIT License
 
-Copyright (C) 2014-2018 Ivo Herweijer
+Copyright (C) 2014-2019 Ivo Herweijer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -42,7 +42,10 @@ and uses <a href="http://glyphicons.com/" target="_blank">Gyphicons</a>.
 Spanish translation by _Jesus Gabriel y Galan_ & _Pablo García_  
 Brazilian Portuguese translation by _Ricardo da Verdade Silva_  
 Dutch translation by _Ivo Herweijer_  
-Japanese translation by _Koji Shimada_ & _Masayoshi Takahashi_
+Japanese translation by _Koji Shimada_ & _Masayoshi Takahashi_  
+Russian translation by _Alexander Nikolaev_  
+Ukrainian translation by _Andrii Palchik_  
+Macedonian translation by _Violeta Pavleska_  
 
 ### Privacy
 
@@ -54,10 +57,10 @@ You can find the privacy statement for the webserver this site is hosted on
 ### Source code
 
 All source code for TryRuby (this website) is available on
-<a href="https://github.com/easydatawarehousing/tryruby" target="_blank">GitHub</a>.
+<a href="https://github.com/ruby/TryRuby" target="_blank">GitHub</a>.
 
 ### Contact
 
 This website was created by Ivo Herweijer. I am a software developer and
 live The Netherlands. You can contact me via
-<a href="https://github.com/easydatawarehousing/TryRuby/issues" target="_blank">GitHub</a>.
+<a href="https://github.com/ruby/TryRuby/issues" target="_blank">GitHub</a>.

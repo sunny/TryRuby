@@ -9,17 +9,20 @@ description: Learn to program in Ruby in 30 minutes
     <div id="tryruby-lang-container">
       <div class="row">
         <div class="col-md-3">
-          <button class="btn btn-default btn-sm" id="tryruby-lang-toggle"><span aria-hidden="true" class="glyphicon glyphicon-globe"></span> Language</button>
+          <button class="btn btn-default btn-sm" id="tryruby-lang-toggle"><span aria-hidden="true" class="glyphicon glyphicon-globe"></span></button>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-10">
           <div class="hidden" id="tryruby-lang-hider">
             <select class="form-control" id="tryruby-lang-select">
               <option value="en">English</option>
-              <option value="es">Espa&ntilde;ol</option>
-              <option value="fr">Français</option>
-              <option value="ja">日本語</option>
               <option value="nl">Nederlands</option>
+              <option value="es">Espa&ntilde;ol</option>
               <option value="pt-br">Português do Brasil</option>
+              <option value="ja">日本語</option>
+              <option value="ru">Русский</option>
+              <option value="ua">Українська</option>
+              <option value="mk">Македонски</option>
+              <option value="fr">Français</option>
             </select>
           </div>
         </div>
@@ -86,4 +89,7 @@ description: Learn to program in Ruby in 30 minutes
   </div>
 </div>
 
-<script>Opal.load('try_ruby');</script>
+<script>
+Opal.loaded(OpalLoaded || []);
+Opal.require('try_ruby');
+</script>

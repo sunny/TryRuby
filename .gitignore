@@ -1,2 +1,5 @@
 build/*
 .bundle
+.idea
+.ruby-version
+.sass-cache
