@@ -15,11 +15,14 @@ description: Learn to program in Ruby in 30 minutes
           <div class="hidden" id="tryruby-lang-hider">
             <select class="form-control" id="tryruby-lang-select">
               <option value="en">English</option>
-              <option value="es">Espa&ntilde;ol</option>
-              <option value="fr">Français</option>
-              <option value="ja">日本語</option>
               <option value="nl">Nederlands</option>
+              <option value="es">Espa&ntilde;ol</option>
               <option value="pt-br">Português do Brasil</option>
+              <option value="ja">日本語</option>
+              <option value="ru">Русский</option>
+              <option value="ua">Українська</option>
+              <option value="mk">Македонски</option>
+              <option value="fr">Français</option>
             </select>
           </div>
         </div>
@@ -86,4 +89,7 @@ description: Learn to program in Ruby in 30 minutes
   </div>
 </div>
 
-<script>Opal.load('try_ruby');</script>
+<script>
+Opal.loaded(OpalLoaded || []);
+Opal.require('try_ruby');
+</script>
