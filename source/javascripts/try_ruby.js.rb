@@ -94,12 +94,28 @@ class TryRuby
     @current_copycode = nil
     @updating         = false
 
+    initialize_menu
+
     # Stop if this is not a TryRuby enabled page
     return unless title_element
 
     # Create editors
-    @output = Editor.new :output, lineNumbers: false, mode: 'text', readOnly: true, styleSelectedText: true
-    @editor = Editor.new :editor, lineNumbers: false, mode: 'ruby', tabMode: 'shift', tabSize: 2, theme: 'tomorrow-night-eighties'
+    @output = Editor.new(
+      :output,
+      lineNumbers: false,
+      mode: 'text',
+      readOnly: true,
+      styleSelectedText: false,
+    )
+
+    @editor = Editor.new(
+      :editor,
+      lineNumbers: false,
+      mode: 'ruby',
+      tabMode: 'shift',
+      tabSize: 2,
+      theme: 'tomorrow-night-eighties',
+    )
 
     # Bind run button
     $document.on(:click, '#btn_run') { do_run }
@@ -113,13 +129,16 @@ class TryRuby
     end
   end
 
+  def initialize_menu
+    $document.on(:click, '[data-change-lang]') { |e| do_change_lang(e) }
+  end
+
   def initialize_playground
     @playground = true
 
     code = get_code_from_url
     @editor.value = code || INITIAL_TRY_CODE.strip
 
-    $document.on(:click, '#btn_copy_url') { do_copy_url }
     $window.on(:hashchange) { on_hash_change }
     @editor.on(:change) { on_editor_change }
   end
@@ -128,9 +147,6 @@ class TryRuby
     $document.on(:click, '#btn_copy') { do_copy }
     $document.on(:click, '#btn_next') { do_next }
     $document.on(:click, '#btn_back') { do_back }
-    $document.on(:click, '#btn_clear') { do_clear }
-    $document.on(:click, '#tryruby-lang-toggle') { do_show_lang }
-    $document.on(:change, '#tryruby-lang-select') { do_change_lang }
 
     # Get language from cookie and start AJAX request to get content
     get_content_from_server(get_language)
@@ -313,22 +329,18 @@ class TryRuby
     update_screen(get_step_content(@step - 1, @editor.value, @output.value))
   end
 
-  # Handle click clear button
-  def do_clear
-    @editor.value = ''
-    @editor.focus
-  end
-
   # Handle click language button
   def do_show_lang
     $document.at_css('#tryruby-lang-hider').toggle_class('hidden')
   end
 
   # Handle change language event
-  def do_change_lang
-    language = $document.at_css('#tryruby-lang-select').value
+  def do_change_lang(event)
+    language = event.target.data["change-lang"]
+
     $document["html"]["lang"] = language
-    set_cookie('tryruby_nl_language', language)
+    set_cookie("tryruby_nl_language", language)
+
     get_content_from_server(language)
   end
 
@@ -337,10 +349,6 @@ class TryRuby
     hash = $$.decodeURIComponent($$[:location][:hash].gsub('+', ' '))
 
     hash['#code='.size..-1] if hash.start_with?('#code=')
-  end
-
-  def do_copy_url
-    $$.navigator.clipboard.writeText(gen_url)
   end
 
   def gen_url
