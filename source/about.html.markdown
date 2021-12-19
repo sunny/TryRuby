@@ -33,9 +33,13 @@ Try Ruby version 2 by _Andrew McElroy & David Miani_
 Try Ruby version 3 by _Eric Allam & Nick Walsh_  
 Try Ruby version 4 by _Ivo Herweijer_  
 
+Fox illustration by _\_why the lucky stiff_.
+
+Language icon [by Ionicons](https://github.com/ionic-team/ionicons) under the
+MIT license.
+
 This website is partially based on <a href="http://opalrb.com/" target="_blank">OpalRb.com</a>
-by _Adam Beynon_,
-and uses <a href="http://glyphicons.com/" target="_blank">Gyphicons</a>.
+by _Adam Beynon_.
 
 ### Translations
 
