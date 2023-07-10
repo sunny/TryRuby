@@ -8,7 +8,7 @@ description: Learn to program in Ruby in 30 minutes
 
     <div id="tryruby-lang-container">
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-3">
           <button class="btn btn-default btn-sm" id="tryruby-lang-toggle"><span aria-hidden="true" class="glyphicon glyphicon-globe"></span></button>
         </div>
         <div class="col-md-10">
@@ -22,6 +22,7 @@ description: Learn to program in Ruby in 30 minutes
               <option value="ru">Русский</option>
               <option value="ua">Українська</option>
               <option value="mk">Македонски</option>
+              <option value="fr">Français</option>
             </select>
           </div>
         </div>

@@ -59,7 +59,7 @@ class Collector
 
       # Encode output as a JSON file
       output = JSON.generate(output)
-      
+
       # Add new lines between examples - this won't break examples as they
       # can't contain unescaped quotes
       output.gsub!('},"', %/},\n"/)
@@ -155,6 +155,7 @@ class MiddlemanCollector < Middleman::Extension
       Collector.new('translations/ru/try_ruby_*.md', 'source/try_ruby_ru.json').collect
       Collector.new('translations/ua/try_ruby_*.md', 'source/try_ruby_ua.json').collect
       Collector.new('translations/mk/try_ruby_*.md', 'source/try_ruby_mk.json').collect
+      Collector.new('translations/fr/try_ruby_*.md', 'source/try_ruby_fr.json').collect
 
       # TODO: add any new translations here
 
